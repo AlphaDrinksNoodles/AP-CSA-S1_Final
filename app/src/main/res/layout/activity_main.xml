@@ -35,10 +35,18 @@
         android:layout_width="179dp"
         android:layout_height="248dp"
         app:srcCompat="@drawable/the_lonely_t_rex__1_"
-        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteX="115dp"
         tools:layout_editor_absoluteY="135dp"
         tools:ignore="MissingConstraints" />
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="188dp"
+        android:layout_height="289dp"
+        app:srcCompat="@drawable/_4251dfdbf24032f62b6174ca6ba2f30"
+        tools:layout_editor_absoluteX="225dp"
+        tools:layout_editor_absoluteY="486dp"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
