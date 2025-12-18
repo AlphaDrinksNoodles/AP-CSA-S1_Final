@@ -2,18 +2,84 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!--Title Text-->
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:id="@+id/textView"
+        android:layout_width="500dp"
+        android:layout_height="60dp"
+        android:text="Dinosaur Game"
+        android:textAlignment="center"
+        android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.108" />
+
+    <!--Start Button-->
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="230dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="64dp"
+        android:text="Start Game"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.77"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.207"
+        tools:ignore="MissingConstraints" />
+
+    <!--Title Screen Dino Image-->
+    <ImageView
+        android:id="@+id/dinoImage"
+        android:layout_width="230dp"
+        android:layout_height="290dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.231"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/the_lonely_t_rex__1_"
+        tools:ignore="MissingConstraints" />
+
+    <!--Settings Image Button-->
+    <ImageButton
+        android:id="@+id/settingsBtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:adjustViewBounds="false"
+        android:backgroundTint="#303030"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/applications_system"
+        tools:ignore="MissingConstraints" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--
+Project inspired by "Chrome Dino" Created by Sebastien Gabriel, Alan Bettes, and Edward Jung
+
+Music in App is by Josh Lim under Creative Commons
+
+Lonely Dinosaur Image is Creative Commons
+https://commons.wikimedia.org/wiki/File:The_Lonely_T_Rex.png
+
+Settings Gear Icon is Creative Commons
+https://freesvg.org/settings-icon
+-->
