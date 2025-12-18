@@ -2,7 +2,75 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/activity_settings"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SettingsActivity"/>
+    tools:context=".SettingsActivity">
+
+    <!--Text edit to change Music Volume-->
+    <EditText
+        android:id="@+id/editMusicVol"
+        android:layout_width="274dp"
+        android:layout_height="69dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Music Volume% (0.1 - 1.0)"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.371" />
+
+    <!-- text edit to change music track-->
+    <EditText
+        android:id="@+id/editMusicTrack"
+        android:layout_width="274dp"
+        android:layout_height="69dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Music Track (1 - 10)"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.102" />
+
+    <!--Button to apply setting changes-->
+
+    <!--Button to go back to main screen-->
+    <Button
+        android:id="@+id/changesBtn"
+        android:layout_width="230dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="64dp"
+        android:text="Apply Changes"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.617" />
+
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="130dp"
+        android:layout_height="128dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98"
+        app:srcCompat="@drawable/back_arrow" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--
+Back Arrow Image is creaitve commons lisence
+https://commons.wikimedia.org/wiki/File:Font_Awesome_5_solid_arrow-alt-circle-left.svg
+-->
